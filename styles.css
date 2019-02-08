@@ -1,0 +1,192 @@
+body {
+    widows: 900px;
+    margin: 0 auto;
+    background-color: black !important;
+    animation-name: slidein;
+    animation-duration: 1s;
+}
+
+#contenedor {
+    text-align: center;
+    align-items: center;
+    width: 900px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+header {
+    background-color: #5b7989;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    flex-flow: row wrap;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+header a {
+    color: black;
+}
+
+.titulo-pagina {
+    width: 70%;
+    text-shadow: 2px 2px white;
+}
+
+nav a {
+    text-decoration: none !important;
+}
+
+.navbar {
+    width: 30%;
+    padding-top: 25px;
+}
+
+nav a:hover {
+    /**/
+    color: white;
+    font-size: 1.3em;
+}
+
+body img {
+    border: 2px;
+    border-style: solid;
+    box-shadow: 2px 2px 2px #02010a;
+}
+
+.inicio {
+    text-decoration: none;
+}
+
+#central {
+    text-align: center;
+    background-color: #82c3a6;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#centro {
+  margin-bottom: 50px;
+    margin-top: 50px;
+    width: 800px;
+    height: 550px;
+}
+.paisajes {
+    width: 50%;
+}
+
+.retratos {
+    width: 50%;
+}
+
+div a img {
+    width: 80%;
+    margin: 20px;
+}
+
+#secundarias {
+    background-color: #d5c75f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+#secundarias a img {
+    position: relative;
+    top: 0px;
+    border-style: solid !important;
+    border-color: black;
+    border: 2px;
+}
+
+.link1 {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+.link1 img:hover {
+    transform: rotate(10deg);
+    transition-duration: 1s;
+}
+
+.link2 {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+.link2 img:hover {
+    transform: translate(5px, -20px);
+    transition-duration: 1s;
+}
+
+footer {
+    position: relative;
+    top: 0px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #C6d5c5;
+    height: 100px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.1em;
+}
+
+.redes a img {
+    margin: 0 auto;
+    width: 15px;
+    height: 15px;
+}
+
+div .redes {
+    text-decoration: none !important;
+}
+
+@media (max-width:900px) {
+    body {
+        width: 100%;
+    }
+    .titulo-pagina {
+        width: 100%;
+    }
+    .navbar {
+        width: 100%;
+        padding-top: 0px;
+    }
+    #central img {
+        width: 60%;
+        height: 50%;
+    }
+    #secundarias {
+        display: flex;
+        flex-direction: column;
+    }
+    #secundarias a img {
+        width: 100%;
+        height: 100%;
+    }
+    footer{
+        flex-flow: column;
+        margin: 0 auto;
+        height: 100%;
+        text-align: center;
+        font-size: 1.5em;
+    }
+}
+@keyframes slidein {
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+  margin-top: -5%;
+  }
+  100%{
+      margin-top: 0%;
+  }
+}
